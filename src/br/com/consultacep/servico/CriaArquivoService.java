@@ -14,6 +14,11 @@ public class CriaArquivoService {
             .setPrettyPrinting()
             .create();
 
+    /**
+     * @description Método responsável por criar um arquivo contendo as informações do CEP consultado.
+     *
+     * @param enderecoConsultado - Endereco
+     */
     public void criaArquivoDeCepConsutado(Endereco enderecoConsultado) {
         try {
             FileWriter escritor = new FileWriter(enderecoConsultado.getCep() + ".json");

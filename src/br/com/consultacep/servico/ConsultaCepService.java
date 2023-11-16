@@ -20,6 +20,12 @@ public class ConsultaCepService {
     private final String enderecoConsultaViaCep = "https://viacep.com.br/ws/%s/json/";
     private final String cepRegex = "[0-9]{5}-?[0-9]{3}";
 
+    /**
+     * @description Método responsável por efetuar a busca das informações do CEP através da API ViaCEP. Retorna null em caso de erro.
+     *
+     * @param cep - String
+     * @return Endereco
+     */
     public Endereco buscaCep(String cep) {
         Endereco endereco = new Endereco();
 
